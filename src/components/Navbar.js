@@ -69,7 +69,7 @@ const Navbar = () => {
     flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12, sm:px-8
     '
     >
-      <button
+      {/* <button
         className=' flex-col justify-center items-center hidden lg:flex'
         onClick={handleClick}
       >
@@ -88,16 +88,16 @@ const Navbar = () => {
             isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
           }`}
         ></span>
-      </button>
+      </button> */}
 
       <div className='w-full flex justify-between items-center lg:hidden'>
         <nav>
           <CustomLink href='/' title='Home' className='mr-4' />
           <CustomLink href='/about' title='About' className='mx-4' />
           <CustomLink href='/projects' title='Projects' className='mx-4' />
-          <CustomLink href='/personel' title='Personel' className='mx-4' />
+          {/* <CustomLink href='/personel' title='Personel' className='mx-4' />
 
-          <CustomLink href='/articles' title='Articles' className='ml-4' />
+          <CustomLink href='/articles' title='Articles' className='ml-4' /> */}
           {/* <Link href={'/'}>Home</Link> */}
         </nav>
         <nav className='flex items-center justify-center flex-wrap'>
@@ -148,7 +148,7 @@ const Navbar = () => {
           </motion.a>
           <button
             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-            className={`ml-3 p-1 rounded-full flex justify-center items-center
+            className={`ml-5 p-1 rounded-full flex justify-center items-center
             ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
             `}
           >
@@ -266,6 +266,22 @@ const Navbar = () => {
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo />
       </div>
+      {/* mob view nighmode btn */}
+      <button
+        onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+        className={`absolute
+          hidden lg:block
+          ml-3 p-1 rounded-full flex justify-center items-center
+            ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
+            right-10 top-8
+            `}
+      >
+        {mode === 'dark' ? (
+          <SunIcon className='fill-dark' />
+        ) : (
+          <MoonIcon className='fill-dark' />
+        )}
+      </button>
     </header>
   );
 };

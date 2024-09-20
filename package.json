@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,7 +14,9 @@
     "framer-motion": "^10.6.0",
     "next": "14.1.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.13.1",
+    "simple-icons": "^13.10.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

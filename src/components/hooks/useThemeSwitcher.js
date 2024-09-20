@@ -19,7 +19,7 @@ const useThemeSwitcher = () => {
       } else {
         let check = mediaQuery.matches ? 'dark' : 'light';
         setMode(check);
-        I;
+        // I;
         if (check === 'dark') {
           document.documentElement.classList.add('dark');
         } else {

@@ -1,3 +1,4 @@
+import FixedMenu from '@/components/FixedMenu';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
@@ -9,20 +10,20 @@ const montserrat = Montserrat({
   variable: '--font-mont',
 });
 export default function App({ Component, pageProps }) {
-  const hello = [
-    'hii',
-    'hello',
-    'Nǐ hǎo',
-    'नमस्ते',
-    'Hola',
-    'Salut',
-    'هذا',
-    'হাই',
-    'oi',
-    'привет',
-    'یہ',
-    ' ',
-  ];
+  // const hello = [
+  //   'hii',
+  //   'hello',
+  //   'Nǐ hǎo',
+  //   'नमस्ते',
+  //   'Hola',
+  //   'Salut',
+  //   'هذا',
+  //   'হাই',
+  //   'oi',
+  //   'привет',
+  //   'یہ',
+  //   ' ',
+  // ];
 
   // const [isLoading, setIsLoading] = useState(true);
   // const [currentGreeting, setCurrentGreeting] = useState(hello[0]);
@@ -65,6 +66,9 @@ export default function App({ Component, pageProps }) {
         <Navbar />
         <Component {...pageProps} />
         <Footer />
+        <div className='hidden fixed bottom-0 w-full lg:block'>
+          <FixedMenu />
+        </div>
       </main>
     </>
   );
