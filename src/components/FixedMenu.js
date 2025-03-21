@@ -36,10 +36,10 @@ const FixedMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className='flex justify-around bg-gray-200 p-4 dark:bg-gray-900 dark:text-cyan-50 w-full'>
+    <nav className='flex justify-around bg-gray-200 p-4 dark:bg-gray-900 dark:text-cyan-50 w-full rounded-2xl'>
       {/* <div>About</div> */}
       <CustomLink href='/about' title='About' />
-      <div>Articles</div>
+      {/* <div>Articles</div> */}
       {/* <CustomLink href='/articles' title='Articles' /> */}
 
       {/* <div>Home</div> */}

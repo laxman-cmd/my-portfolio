@@ -9,6 +9,7 @@ import HireMe from '@/components/HireMe';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import Intro from '@/components/Intro';
 import ProfileImage from '@/components/ProfileImage';
+import MyIntro from '@/components/MyIntro';
 
 export default function Home() {
   return (
@@ -19,28 +20,13 @@ export default function Home() {
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
-          <div
-            className='flex justify-center 
-              md:m-0
-              items-center
-              lg:flex-col-reverse
-              h-[30rem] lg:h-[60rem]
-              lg:space-y-8 space-y-0 lg:space-x-0 space-x-8
-            '
-          >
-            <div className='w-1/2'>
-              <Intro />
-            </div>
-            <div className='w-1/2 md:w-full min-w-8'>
-              <ProfileImage />
-            </div>
-          </div>
+          <MyIntro />
           <div className='flex justify-between items-center w-full lg:flex-col'>
             <div className='w-1/2 md:w-full '>
               <Image
                 src={profilePic}
                 alt='laxman mistry'
-                className='w-full h-auto lg:hidden md:inline-block md:w-full '
+                className='w-[80%] h-auto lg:hidden md:inline-block md:w-full '
                 priority
                 sizes='(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw
@@ -50,7 +36,7 @@ export default function Home() {
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText
                 text='Turning Vision Into Reality, With Code And Design.'
-                className='!text-6xl !text-left pb-1 dark:text-light 
+                className='!text-4xl !text-left pb-1 dark:text-light 
                 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
                 '
               />
@@ -64,7 +50,7 @@ export default function Home() {
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link
                   target={'_blank'}
-                  href='/dummy.pdf'
+                  href='/Laxman_Mistry_Resume_2025.pdf'
                   className='flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-yellow-500
@@ -79,7 +65,7 @@ export default function Home() {
                 </Link>
                 <Link
                   target={'_blank'}
-                  href='/mailto:mistrylaxmand@gmail.com'
+                  href='mailto: mistrylaxmand@gmail.com'
                   className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'
                 >
                   Contact

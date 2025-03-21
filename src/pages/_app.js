@@ -10,50 +10,50 @@ const montserrat = Montserrat({
   variable: '--font-mont',
 });
 export default function App({ Component, pageProps }) {
-  // const hello = [
-  //   'hii',
-  //   'hello',
-  //   'Nǐ hǎo',
-  //   'नमस्ते',
-  //   'Hola',
-  //   'Salut',
-  //   'هذا',
-  //   'হাই',
-  //   'oi',
-  //   'привет',
-  //   'یہ',
-  //   ' ',
-  // ];
+  const hello = [
+    'hii',
+    'hello',
+    'Nǐ hǎo',
+    'नमस्ते',
+    'Hola',
+    'Salut',
+    'هذا',
+    'হাই',
+    'oi',
+    'привет',
+    'یہ',
+    ' ',
+  ];
 
-  // const [isLoading, setIsLoading] = useState(true);
-  // const [currentGreeting, setCurrentGreeting] = useState(hello[0]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentGreeting, setCurrentGreeting] = useState(hello[0]);
 
-  // useEffect(() => {
-  //   let index = 0;
+  useEffect(() => {
+    let index = 0;
 
-  //   const interval = setInterval(() => {
-  //     setCurrentGreeting(hello[index]);
-  //     index = (index + 1) % hello.length;
-  //   }, 150);
+    const interval = setInterval(() => {
+      setCurrentGreeting(hello[index]);
+      index = (index + 1) % hello.length;
+    }, 150);
 
-  //   const timeout = setTimeout(() => {
-  //     clearInterval(interval);
-  //     setIsLoading(false);
-  //   }, 3000);
+    const timeout = setTimeout(() => {
+      clearInterval(interval);
+      setIsLoading(false);
+    }, 3000);
 
-  //   return () => {
-  //     clearTimeout(timeout);
-  //     clearInterval(interval);
-  //   };
-  // }, []);
+    return () => {
+      clearTimeout(timeout);
+      clearInterval(interval);
+    };
+  }, []);
 
-  // if (isLoading) {
-  //   return (
-  //     <div className='flex items-center justify-center min-h-screen bg-light dark:bg-dark'>
-  //       <h1 className='text-4xl font-bold'>{currentGreeting}</h1>
-  //     </div>
-  //   );
-  // }
+  if (isLoading) {
+    return (
+      <div className='flex items-center justify-center min-h-screen bg-light dark:bg-dark'>
+        <h1 className='text-4xl font-bold'>{currentGreeting}</h1>
+      </div>
+    );
+  }
   return (
     <>
       <Head>
