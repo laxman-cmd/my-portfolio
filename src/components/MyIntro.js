@@ -109,8 +109,8 @@ const MyIntro = () => {
           </AnimatedTextNormal>
 
           <p className='my-4 text-base font-medium dark:text-light md:text-sm sm:text-xs'>
-            "Creating seamless user experiences and scalable solutions with 1+
-            years of software development expertise."
+            &quot;Creating seamless user experiences and scalable solutions with
+            1+ years of software development expertise.&quot;
           </p>
         </div>
       </div>

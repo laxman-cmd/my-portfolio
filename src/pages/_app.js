@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
 import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-mont',
@@ -27,19 +27,23 @@ export default function App({ Component, pageProps }) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [currentGreeting, setCurrentGreeting] = useState(hello[0]);
+  const indexRef = useRef(0);
 
   useEffect(() => {
-    let index = 0;
+    // let index = 0;
 
     const interval = setInterval(() => {
-      setCurrentGreeting(hello[index]);
-      index = (index + 1) % hello.length;
+      setCurrentGreeting(() => {
+        indexRef.current = (indexRef.current + 1) % hello.length;
+        return hello[indexRef.current];
+      });
+      // index = (index + 1) % hello.length;
     }, 150);
 
     const timeout = setTimeout(() => {
       clearInterval(interval);
       setIsLoading(false);
-    }, 3000);
+    }, 2500);
 
     return () => {
       clearTimeout(timeout);
