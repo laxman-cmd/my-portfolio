@@ -54,17 +54,25 @@ const Experience = () => {
         />
         <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
           <Details
-            position={'Software Engineer'}
+            position={'Software Development Engineer'}
+            company={'Trexo Fintech Pvt Ltd'}
+            time={'2025 Mar - Present'}
+            address={'517/518 Atlanta Estate, near Virwani Industrials, Goregaon'}
+            work='Worked on a team responsible for developing new features for various projects, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.'
+            companyLink={'www.solankitechnologies.com'}
+          />
+          <Details
+            position={'Software Development Engineer'}
             company={'Solanki Technologies'}
-            time={'2023-Present'}
-            address={'Panchratna SRA, Goregaon'}
+            time={'2022 Dec - 2025 Mar'}
+            address={'411, Panchratna, near ExpressZone, Goregaon'}
             work='Worked on a team responsible for developing new features for various projects, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.'
             companyLink={'www.solankitechnologies.com'}
           />
           <Details
             position={'CS Faculty'}
             company={'PACE'}
-            time={'2022-2023'}
+            time={'2021 Nov - 2022 Dec'}
             address={'Gokhale Road, Thane East'}
             work='As a Computer Science faculty, I had the privilege of guiding students through the Basic Fundamentals of software development, algorithms, and data structures. My experience in creating and delivering curriculum and problem-solving abilities, preparing them for successful careers in the tech industry.'
             companyLink={'www.paceiit.com'}

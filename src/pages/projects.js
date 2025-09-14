@@ -92,6 +92,10 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 // import pj1 from '../../public/images/projects/agency-website-cover-image.jpg';
+import trexoedge from '../../public/trexoedge.png';
+import wezboone from '../../public/wezboone.png';
+import trexomoney from '../../public/trexomoney.png';
+
 import pj1 from '../../public/dpinfra_snap.png';
 // import pj2 from '../../public/images/projects/fashion-studio-website.jpg';
 import pj2 from '../../public/goplayturf.png';
@@ -101,6 +105,24 @@ import { siReact, siMongodb, siExpress } from 'simple-icons/icons';
 
 const Projects = () => {
   const projectsArray = [
+    {
+      title: 'TrexoEdge WebApp',
+      description:`trexo edge description here #willupdatesoon #onGoingProject `,
+      image: trexoedge,
+      link: '/trexoedge.com',
+    },
+      {
+      title: 'Wezboone WebApp',
+      description:`Wezboone description here #willupdatesoon #onGoingProject`,
+      image: wezboone,
+      link: '/one.wezboone.com',
+    },
+      {
+      title: 'Trexo Money Website',
+      description:`trexo money description here #willupdatesoon #onGoingProject`,
+      image: trexomoney,
+      link: '/trexo.money',
+    },
     {
       title: 'Tanker ERP',
       description:

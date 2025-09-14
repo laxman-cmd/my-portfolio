@@ -76,7 +76,7 @@ const Intro = () => {
               text-base font-medium dark:text-light md:text-sm sm:text-sm'
               >
                 {`"Creating seamless user experiences and scalable solutions with
-                1+ years of software development expertise."`}
+                3+ years of software development expertise."`}
               </div>
 
               {/* Contact Me Button */}
