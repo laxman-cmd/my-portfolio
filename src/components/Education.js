@@ -64,7 +64,7 @@ const Education = () => {
           />
           <Details
             type={'SSC'}
-            time={'2016-2020'}
+            time={'2000-2013'}
             place={'Holy Cross High School (SSC)'}
             info={
               '  Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.'
